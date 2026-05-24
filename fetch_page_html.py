@@ -16,11 +16,14 @@ print(img)
 
 total_rotation_rect = img.crop((650, 465, 715, 730))
 
-total_rotation_rect = img.crop((650, 465, 715, 730))
+big_count = img.crop((725, 465, 770, 730))
 
 
 total_rotation_rect.show()
+big_count.show()
 
 text = pytesseract.image_to_string(total_rotation_rect)
+text = pytesseract.image_to_string(big_count)
+
 
 print(text)
