@@ -16,10 +16,11 @@ print(img)
 
 total_rotation_rect = img.crop((650, 465, 715, 730))
 
-cropped.show()
+total_rotation_rect = img.crop((650, 465, 715, 730))
 
-# config = r'--psm 6 -c tessedit_char_whitelist=0123456789/.-='
 
-text = pytesseract.image_to_string(cropped, config=config)
+total_rotation_rect.show()
+
+text = pytesseract.image_to_string(total_rotation_rect)
 
 print(text)
